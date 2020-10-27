@@ -15,4 +15,9 @@ public class MemberController {
     public ResponseEntity getMemberList(){
         return ResponseEntity.ok(memberService.getMemberList());
     }
+
+    @GetMapping("/sortList")
+    public ResponseEntity getSortMemberList(){
+        return ResponseEntity.ok(memberService.getSortMemberList());
+    }
 }
